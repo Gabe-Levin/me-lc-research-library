@@ -47,5 +47,3 @@ Multi-element approach (parallel to multi-element causation): [[Mitochondrial Su
 ## Related
 
 [[Long COVID]] · [[Post-Exertional Malaise]] · [[Fibromyalgia]] · [[IACCs]] · [[Sarah Healing]]
-
-Your personal case map:
