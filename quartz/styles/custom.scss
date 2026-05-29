@@ -1,3 +1,65 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ─── Floating Chat CTA ────────────────────────────────────────────────
+// The first footer link (NotebookLM chat) is plucked out of the page flow
+// and pinned to the bottom-right corner of every page as a persistent
+// call-to-action. Real <a> tag, no JS needed.
+footer ul li:first-child a {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+
+  display: inline-block;
+  background: var(--secondary);
+  color: var(--light) !important;
+  padding: 0.75rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-family: var(--bodyFont);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+footer ul li:first-child a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.3);
+  background: var(--tertiary);
+  text-decoration: none;
+}
+
+// ─── Footer layout ────────────────────────────────────────────────────
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+// The first link is now pinned, so don't reserve flexbox space for it.
+footer ul li:first-child {
+  display: none;
+}
+
+// ─── Graph view tweaks ────────────────────────────────────────────────
+// Slightly bigger node labels (works alongside fontSize plugin option).
+.graph-container,
+.global-graph-container {
+  font-size: 1rem;
+}
+
+// Subtle helper text under the Graph header
+.graph h3::after {
+  content: " — hover, click to open";
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--gray);
+  margin-left: 0.4rem;
+}
