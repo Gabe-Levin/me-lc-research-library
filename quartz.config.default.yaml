@@ -133,22 +133,22 @@ plugins:
     options:
       localGraph:
         depth: 2
-        fontSize: 0.9
+        fontSize: 1.0
         repelForce: 0.7
         centerForce: 0.3
         linkDistance: 40
-        opacityScale: 1.2
+        opacityScale: 3.5
         showTags: true
         focusOnHover: true
         enableRadial: false
       globalGraph:
         depth: -1
         scale: 0.85
-        fontSize: 1.0
+        fontSize: 1.1
         repelForce: 0.8
         centerForce: 0.25
         linkDistance: 45
-        opacityScale: 1.3
+        opacityScale: 3.5
         showTags: true
         focusOnHover: true
         enableRadial: false
