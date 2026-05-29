@@ -1,4 +1,5 @@
 ---
+password: healingme
 tags:
   - type/condition
 ---
