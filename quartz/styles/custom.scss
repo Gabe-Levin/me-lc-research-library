@@ -43,9 +43,14 @@ footer ul {
   padding: 0;
 }
 
-// The first link is now pinned, so don't reserve flexbox space for it.
+// The first link is now pinned. Collapse the parent <li> so it doesn't
+// reserve space in the footer flow — but DO NOT use display:none, which
+// would hide the fixed-position child too.
 footer ul li:first-child {
-  display: none;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  flex-basis: 0;
 }
 
 // ─── Graph view tweaks ────────────────────────────────────────────────
