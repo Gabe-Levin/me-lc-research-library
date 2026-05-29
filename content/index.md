@@ -1,5 +1,4 @@
 ---
-password: healingme
 title: Sarah Healing — ME/CFS + Long COVID Research
 ---
 

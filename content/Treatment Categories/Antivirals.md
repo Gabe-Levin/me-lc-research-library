@@ -1,5 +1,4 @@
 ---
-password: healingme
 tags:
   - type/treatment-category
   - class/antiviral
